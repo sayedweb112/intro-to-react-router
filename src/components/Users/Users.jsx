@@ -9,6 +9,11 @@ console.log(users)
     return (
         <div>
             <h2>This is users page</h2>
+            <div>
+                {
+                    users.map(user => <Users key={user.id} user={user}></Users>)
+                }
+            </div>
         </div>
     );
 };
